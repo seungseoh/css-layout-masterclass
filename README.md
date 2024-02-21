@@ -65,6 +65,8 @@ https://github.com/nomadcoders/scss-masterclass
 
 ## To Clone:
 
+- [https://dribbble.com/shots/17000165-HAAN-sanitizers-products-pages/attachments/12079703?mode=media](Beauty Store)
+
 - [https://besthorrorscenes.com/](https://besthorrorscenes.com/)
 - [https://paint-box.com/](https://paint-box.com/)
 - [http://10x19.co/](http://10x19.co/)
