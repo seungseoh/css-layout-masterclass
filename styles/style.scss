@@ -1,7 +1,9 @@
 @import "./reset.scss";
 
+$grey: #cacdcd;
+
 body {
-  background: #dce6d1;
+  background: #b8bbbb;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,10 +11,91 @@ body {
 }
 
 .phone {
-  background-color: black;
-  border-radius: 50px;
-  height: 95%;
-  width: 420px;
-  padding: 50px 20px;
-  box-sizing: border-box;
+  width: 480px;
+  height: 90%;
+  border-radius: 10px;
+  background-color: $grey;
+  box-shadow: 5px 10px 10px rgba($color: #000000, $alpha: 0.5);
+}
+
+.header {
+  background-color: #c6caca;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+  font-size: medium;
+}
+
+.total {
+  background-color: #1f1414;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: bold;
+  padding: 25px 15px;
+  .total__amount {
+    font-size: x-large;
+  }
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  background-color: #c6caca;
+  gap: 18px;
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #d7dbdb;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    gap: 20px;
+    .item__info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 30px 15px;
+      .item__info-col {
+        &:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+        .info__title {
+          font-size: 36px;
+          font-weight: bold;
+        }
+        .info__subtitle {
+          font-size: 15px;
+          font-weight: 500;
+        }
+        .info__price {
+          font-size: x-large;
+          font-weight: bold;
+        }
+      }
+    }
+    .item__specs {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 130px);
+      border-top: 3px solid black;
+      .spec {
+        padding: 15px;
+        border-right: 3px solid black;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .item__photo {
+      position: absolute;
+      object-fit: cover;
+      background-color: #c6caca;
+      border: 3px solid black;
+      right: 20px;
+      bottom: -3px;
+      width: 42%;
+      height: 170px;
+    }
+  }
 }
