@@ -7,51 +7,60 @@
     <title>CSS Layout Masterclass</title>
   </head>
   <body>
-    <main class="container">
-      <nav class="navbar">
-        <ul class="items">
-          <li class="item">Icon_List</li>
-          <li class="item">Best Sellers</li>
-          <li class="item">Hand Sanitizer</li>
-          <li class="item">Hand Cream</li>
-          <li class="item">Refills</li>
-          <li class="item">Img_Logo</li>
-          <li class="item">Toothpast</li>
-          <li class="item">Hand Soap</li>
-          <li class="item">Combos</li>
-          <li class="item">Icon_Profile</li>
-          <li class="item">Icon_Cart</li>
+    <header class="header">
+      <nav class="header__nav">
+        <ul>
+          <li class="header__tab">🔥</li>
+          <li class="header__tab">Best Sellers</li>
+          <li class="header__tab">Hand Soap</li>
+          <li class="header__tab">Shampoo</li>
+          <li class="header__tab">Body Lotion</li>
+          <li class="header__tab">Grid</li>
+          <li class="header__tab">Brush</li>
+          <li class="header__tab">Soap</li>
+          <li class="header__tab">Towel</li>
+          <li class="header__tab">👩🏻‍🔧</li>
+          <li class="header__tab">🛍️</li>
         </ul>
-        <div class="position">Home / Catalog / Hand Soap / Sunset Fleur</div>
       </nav>
-      <section class="product">
-        <div class="product-col">
-          <img src="" alt="" class="product-img" />
-        </div>
-        <div class="product-col">
-          <div class="product__detail-row">
-            <div class="category">hand soap</div>
-            <div class="title">sunset fleur</div>
-            <div class="spec">
-              <span class="count">1</span><span class="price">$11.90</span
-              ><span class="add_cart">add to cart</span>
+      <div class="header__breadcrumbs">
+        <span class="header__crumb">Home /</span>
+        <span class="header__crumb">Catalog /</span>
+        <span class="header__crumb">Shop /</span>
+        <span class="header__crumb">Shampoo</span>
+      </div>
+    </header>
+    <section class="product">
+      <div class="product__img"></div>
+      <div class="product__info">
+        <div class="product__header">
+          <span class="product__category">Hand Soap</span>
+          <h1 class="product__title">Shampoo for Hair</h1>
+          <div class="product__add-to-cart">
+            <div class="product__qty">
+              <span class="product__minus">-</span>
+              <span class="product__total-qty">1</span>
+              <span class="product__plus">+</span>
             </div>
-          </div>
-          <div class="product_spec">
-            <div class="detail-subscription">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reprehenderit mollitia aperiam fugit, distinctio praesentium
-              asperiores dolore saepe culpa, ducimus, possimus laboriosam
-              voluptatum ex atque ipsam corrupti quaerat eum. Mollitia, sequi.
-            </div>
-            <ul class="guides">
-              <li class="guide">how to use</li>
-              <li class="guide">ingredients</li>
-              <li class="guide">shipping & payment</li>
-            </ul>
+            <span class="product__price">$11,89</span>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="product__footer">
+          <div class="product__description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              quam eaque deserunt. Ullam, dignissimos corrupti officia
+              voluptatum facilis iusto accusamus! Dolorum excepturi quae placeat
+              quasi ex magni assumenda ullam blanditiis.
+            </p>
+          </div>
+          <div class="product__faq">
+            <div class="product__question">How to use<span>+</span></div>
+            <div class="product__question">Ingredients<span>+</span></div>
+            <div class="product__question">Shipping<span>+</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
