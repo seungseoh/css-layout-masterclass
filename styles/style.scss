@@ -1,9 +1,68 @@
 @import "./reset.scss";
 
 body {
-  background: #dce6d1;
+  background: #f3f6ff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 90vh;
+  border: 1.5px solid black;
+}
+
+.navbar {
+  .items {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    border-bottom: 2px solid gray;
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-left: 2px solid gray;
+      padding: 20px 0px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+  .position {
+    border-bottom: 2px solid gray;
+    padding: 10px 25px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  height: 100%;
+  .product-col {
+    display: grid;
+    grid-template-rows: 1.3fr 1fr;
+    &:first-child {
+      border-right: 2px solid gray;
+    }
+    .product__detail-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+    .product_spec {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 2px solid gray;
+      .detail-subscription {
+        border-right: 2px solid gray;
+      }
+    }
+  }
 }
